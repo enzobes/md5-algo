@@ -1,18 +1,34 @@
 *(DO NOT USE FOR SECURITY PURPOSE)*
 # Implémentation de MD5 avec Go 
 
+```
+usage: md5 --password=PASSWORD [<flags>]
+
+Flags:
+      --help               Show context-sensitive help (also try --help-long and --help-man).
+  -p, --password=PASSWORD  Password to hash.
+```
+
+
 ## Prérequis
 
 Installer [Go](https://golang.org/)
 
-```
-go get github.com/H4nks/md5-algo
-cd md5-algo
-go build
-```
-## Utilisation
+
+## Utilisation sans installation
 
 ```
-./md5-algo -p [PASSWORD]
+git clone https://github.com/H4nks/md5-algo.git
+cd md5-algo
+go build md5.go
+./md5 -p [PASSWORD]
 ```
+
+
+## Installation
+
+```
+go get github.com/H4nks/md5-algo
+```
+
 
